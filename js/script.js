@@ -5,7 +5,6 @@ keys.addEventListener("click", (event) => {
   event.preventDefault();
   let result = document.querySelector("#result");
   let clickedKey = event.target.textContent;
-  console.log(clickedKey);
 
 
   const textPusher = (text) => {
