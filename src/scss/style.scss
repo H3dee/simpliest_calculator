@@ -1,0 +1,66 @@
+@import '_reseter';
+
+.wrapper {
+      min-height: 100%;
+      min-width: 100%;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #081923;
+}
+
+.calculator_window {
+      width: 500px;
+      height: 700px;
+      .container {
+            height: 100%;
+            width: 100%;
+            .calculator_window_row {
+                  height: 100%;
+                  width: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  .window_result{
+                        min-height: 93px;
+                        font-size: 23px;
+                        background: #ffffff;
+                        text-align: right;
+                        padding: 35px 7px;
+                        text-transform: uppercase;
+                  }
+                  .window_keys{
+                        flex: 1 1 auto;
+                        display: flex;
+                        flex-wrap: wrap;
+                        .key_item {
+                              flex: 1 1 25%;
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              padding: 20px;
+                              background: #0c2635;
+                              border: 0.1px solid #0819234d;
+                              cursor: pointer;
+                              .item_letter{
+                                    text-transform: uppercase;
+                                    text-align: center;
+                                    font-size: 23px;
+                                    color: #ffffff;
+                              }
+                        }
+                        .key_item:first-child {
+                              background: #ff2d79;
+                              flex: 0 0 50%
+                        }
+                        .key_item:last-child {
+                              background: #0390d0;
+                        }
+                        .key_item:active {
+                              background: #2ecc71;
+                        }
+                  }
+
+            }
+      }
+}
